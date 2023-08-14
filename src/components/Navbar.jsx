@@ -1,0 +1,108 @@
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { SiteContext } from "../context/SiteContext";
+import ThemeIcon from "./ThemeIcon";
+
+export default function Navbar() {
+  const { user, handleLogout } = useContext(SiteContext);
+
+  const brandStyle = {
+    marginLeft: "0cm", // Yeni değer
+    color: "#FFD700", // Altın Sarısı
+    fontWeight: "bold",
+  };
+
+  const menuItemStyle = {
+    color: "#FFFFFF", // Beyaz
+    textDecoration: "none",
+    padding: "0.5rem 1rem",
+    transition: "background-color 0.3s",
+  };
+
+  return (
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#141E61" }}>
+      <div className="container">
+        <Link className="navbar-brand my-2" to="/" style={brandStyle}>
+         <h2>PALA-Store</h2> 
+        </Link>
+       
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div className="navbar-nav ms-auto">
+            <NavLink
+              className="nav-link"
+              to="/"
+              style={menuItemStyle}
+              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+            >
+              Ana Sayfa
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              to="/products"
+              style={menuItemStyle}
+              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+            >
+              Urunler
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              to="/about"
+              style={menuItemStyle}
+              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+            >
+              Hakkimizda
+            </NavLink>
+            <NavLink
+              className="nav-link"
+              to="/contact"
+              style={menuItemStyle}
+              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+            >
+              Iletisim
+            </NavLink>
+            {user ? (
+              <>
+                <NavLink
+                  className="nav-link"
+                  to="/fav"
+                  style={menuItemStyle}
+                  activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+                >
+                  Favoriler
+                </NavLink>
+                <button className="btn" onClick={handleLogout} style={menuItemStyle}>
+                  Logout ({user.name})
+                </button>
+              </>
+            ) : (
+              <NavLink
+                className="nav-link"
+                to="/login"
+                style={menuItemStyle}
+                activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
+              >
+                Login
+              </NavLink>
+            )}
+          </div>
+{/* 
+          <div className="navbar-nav ms-auto">
+            <ThemeIcon />
+          </div> */}
+        </div>
+      </div>
+      
+    </nav>
+  );
+}
