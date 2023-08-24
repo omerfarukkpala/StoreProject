@@ -75,11 +75,11 @@ export default function Navbar() {
               <>
                 <NavLink
                   className="nav-link"
-                  to="/fav"
+                  to="/sepet"
                   style={menuItemStyle}
                   activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
                 >
-                  Favoriler
+                  Sepet
                 </NavLink>
                 <button className="btn" onClick={handleLogout} style={menuItemStyle}>
                   Logout ({user.name})
