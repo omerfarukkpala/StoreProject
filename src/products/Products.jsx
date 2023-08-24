@@ -5,7 +5,7 @@ export default function Products() {
   const [last10Products, setLast10Products] = useState([])
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products?limit=8")
+    fetch("https://fakestoreapi.com/products?limit=12")
       .then(res => res.json())
       .then(res => setLast10Products(res))
   }, [])

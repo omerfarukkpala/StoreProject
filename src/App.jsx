@@ -4,6 +4,7 @@ import SiteRoutes from './SiteRoutes'
 import { SiteContext } from './context/SiteContext'
 import Footer from './components/Footer'
 import ThemeIcon from './components/ThemeIcon'
+import Header from './components/Layout/Header'
 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
   
   return (
     <>
-      <Navbar/>
+      <Header/>
+      <Navbar/> 
       <ThemeIcon/>
       <div className="container">
         <div className="row">
