@@ -1,8 +1,11 @@
 import products from "../../productData";
+import ProductItem from "./ProductItem";
 import "./Products.css";
 
 const Products = () => {
-  const productList = products.map((item) => <li>{item.name}</li>);
+  const productList = products.map((product) => (
+    <ProductItem key={product.id} product={product} />
+  ));
 
   return (
     <main className="products-wrapper">

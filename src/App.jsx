@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import ThemeIcon from './components/ThemeIcon'
 import Header from './components/Layout/Header'
 import Hero from './components/Hero/Hero'
+import Products from './components/Products/Products'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 
       <Header/>
       <Hero/>
+      <Products/>
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
