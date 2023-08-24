@@ -30,9 +30,11 @@ export default function ProductCard({ item }) {
           />
         </Link>
         <div className="card-body">
-          <h5 className="card-title">{item.title}</h5>
+        <h5 className="card-title">{item.title.substring(0, 10)}</h5>
+
+          
           <p className="card-text">
-            {item.description.substring(0, 50)}
+            {item.description.substring(0, 30)}
           </p>
           <p className="lead">{item.price}</p>
 
