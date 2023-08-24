@@ -10,6 +10,7 @@ const HeaderCartButton = () => {
       <span>Sepetim</span>
       <span className="badge">0</span>
     </button>
+    
   );
 };
 

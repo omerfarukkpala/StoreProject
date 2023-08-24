@@ -13,18 +13,16 @@ export default function Navbar() {
   };
 
   const menuItemStyle = {
-    color: "#FFFFFF", // Beyaz
+    color: "#FFD700", // Beyaz
     textDecoration: "none",
     padding: "0.5rem 1rem",
     transition: "background-color 0.3s",
   };
 
   return (
-    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#141E61" }}>
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#FFFFF" }}>
       <div className="container">
-        <Link className="navbar-brand my-2" to="/" style={brandStyle}>
-         <h2>PALA-Store</h2> 
-        </Link>
+        
        
         <button
           className="navbar-toggler"
@@ -77,7 +75,6 @@ export default function Navbar() {
                   className="nav-link"
                   to="/sepet"
                   style={menuItemStyle}
-                  activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
                 >
                   Sepet
                 </NavLink>
@@ -90,7 +87,6 @@ export default function Navbar() {
                 className="nav-link"
                 to="/login"
                 style={menuItemStyle}
-                activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
               >
                 Login
               </NavLink>

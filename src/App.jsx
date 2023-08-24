@@ -5,6 +5,7 @@ import { SiteContext } from './context/SiteContext'
 import Footer from './components/Footer'
 import ThemeIcon from './components/ThemeIcon'
 import Header from './components/Layout/Header'
+import Hero from './components/Hero/Hero'
 
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
   return (
     <>
       
-      <Navbar/> 
+      
       <Header/>
+      <Hero/>
       <ThemeIcon/>
       <div className="container">
         <div className="row">
