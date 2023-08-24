@@ -1,7 +1,18 @@
 import React from "react";
+import Header from "../components/Layout/Header";
+
 
 export default function About() {
   return (
+<>
+    <Header/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
     <div className="container mt-5">
       <div className="row">
         <div className="col-md-6">
@@ -33,5 +44,6 @@ export default function About() {
         </div>
       </div>
     </div>
+    </>
   );
 }

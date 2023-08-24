@@ -2,6 +2,9 @@ import { useEffect, useState } from "react"
 import ProductCard from "./ProductCard"
 
 
+import Header from "../components/Layout/Header";
+
+
 export default function Products() {
   const [last10Products, setLast10Products] = useState([])
 
@@ -13,7 +16,7 @@ export default function Products() {
 
   return (
     <>
-    
+    <Header/>
     <h2>Urunler:</h2>
       <div className="row row-cols-sm-3 row-cols-md-4">
         {last10Products.map(item => <ProductCard key={item.id} item={item} />)}

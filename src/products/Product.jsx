@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/Layout/Header";
 
 export default function Product({ user }) {
   const { productId } = useParams();
@@ -17,6 +18,8 @@ export default function Product({ user }) {
   }
 
   return (
+    <>
+    <Header/>
     <div className="product-details">
       <div className="product-image">
         <img src={product.image} alt="" className="w-100 img-thumbnail" />
@@ -26,5 +29,6 @@ export default function Product({ user }) {
         <p>{product.description}</p>
       </div>
     </div>
+    </>
   );
 }
