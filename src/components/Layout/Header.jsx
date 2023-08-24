@@ -1,4 +1,5 @@
 import Navbar from "../Navbar";
+import ThemeIcon from "../ThemeIcon";
 import "./Header.css"
 import HeaderCartButton from "./HeaderCartButton";
 
@@ -8,7 +9,8 @@ const Header = () => {
       <h1>Trend Mağaza</h1>
 
      <Navbar/>
-     <HeaderCartButton />     
+     <HeaderCartButton />  
+     <ThemeIcon/>   
     </header>
   );
 };

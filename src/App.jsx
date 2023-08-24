@@ -14,10 +14,9 @@ function App() {
   return (
     <>
       
-      
+
       <Header/>
       <Hero/>
-      <ThemeIcon/>
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

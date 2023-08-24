@@ -7,7 +7,6 @@ export default function Navbar() {
   const { user, handleLogout } = useContext(SiteContext);
 
   const brandStyle = {
-    marginLeft: "0cm", // Yeni değer
     color: "#FFD700", // Altın Sarısı
     fontWeight: "bold",
   };
@@ -41,7 +40,6 @@ export default function Navbar() {
               className="nav-link"
               to="/"
               style={menuItemStyle}
-              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
             >
               Ana Sayfa
             </NavLink>
@@ -49,7 +47,6 @@ export default function Navbar() {
               className="nav-link"
               to="/products"
               style={menuItemStyle}
-              activeStyle={{ backgroundColor: "#1D7EBB", color: "#FFFFFF" }}
             >
               Urunler
             </NavLink>
