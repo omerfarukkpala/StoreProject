@@ -12,8 +12,9 @@ function App() {
   
   return (
     <>
-      <Header/>
+      
       <Navbar/> 
+      <Header/>
       <ThemeIcon/>
       <div className="container">
         <div className="row">

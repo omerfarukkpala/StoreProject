@@ -1,11 +1,13 @@
-import React from "react";
+import "./Header.css"
+import HeaderCartButton from "./HeaderCartButton";
 
-const Header= () => {
+const Header = () => {
   return (
-    <div>
-      <h1>Header</h1>
-    </div>
+    <header className="header">
+      <h1>Trend Mağaza</h1>
+     <HeaderCartButton />
+    </header>
   );
-}
+};
 
 export default Header;
