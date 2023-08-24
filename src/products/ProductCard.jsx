@@ -7,37 +7,38 @@ export default function ProductCard({ item }) {
   const { user } = useContext(SiteContext);
 
   function handleClick(product) {
-    let localFavs = JSON.parse(localStorage.getItem("favs")) ?? [];
-    const itemIndex = localFavs.findIndex(localItem => product.id === localItem.id);
+    let localSepets = JSON.parse(localStorage.getItem("sepets")) ?? [];
+    const itemIndex = localSepets.findIndex(localItem => product.id === localItem.id);
     if (itemIndex >= 0) {
-      localFavs = localFavs.filter(item => item.id !== product.id);
+      localSepets = localSepets.filter(item => item.id !== product.id);
     } else {
-      localFavs.push({ id: product.id, title: product.title });
+      localSepets.push({ id: product.id, title: product.title });
     }
-    localStorage.setItem("favs", JSON.stringify(localFavs));
+    localStorage.setItem("sepets", JSON.stringify(localSepets));
   }
 
   return (
     <div className="col-sm mb-3">
       <div className="card">
+        {/* Ürün detay sayfasına doğrudan yönlendirme için Link öğesi */}
         <Link to={productUrl}>
           <img
             src={item.image}
             className="card-img-top p-3 img-thumbnail"
             alt={item.title}
-            style={{ width: "100%", height: "200px" }} // Resim boyutunu ayarlayın
+            style={{ width: "100%", height: "200px" }}
           />
         </Link>
         <div className="card-body">
           <h5 className="card-title">{item.title}</h5>
           <p className="card-text">
-            {item.description.substring(0, 50)}.. {/* İlk 75 karakteri göster */}
+            {item.description.substring(0, 50)}
           </p>
           <p className="lead">{item.price}</p>
 
           {user && (
             <a href="#" className="btn btn-secondary" onClick={() => handleClick(item)}>
-              Fav
+              Sepete Ekle
             </a>
           )}
         </div>
