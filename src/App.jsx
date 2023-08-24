@@ -7,6 +7,7 @@ import ThemeIcon from './components/ThemeIcon'
 import Header from './components/Layout/Header'
 import Hero from './components/Hero/Hero'
 import Products from './components/Products/Products'
+import Cart from './components/Cart/Cart'
 
 
 function App() {
@@ -15,10 +16,13 @@ function App() {
   return (
     <>
       
-
+      
       <Header/>
       <Hero/>
+      <Cart/>
       <Products/>
+      
+
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
