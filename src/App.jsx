@@ -17,12 +17,9 @@ function App() {
     <>
       
       
-      <Header/>
-      <Hero/>
-      <Cart/>
-      <Products/>
+     
       
-
+    
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

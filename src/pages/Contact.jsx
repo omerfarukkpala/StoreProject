@@ -1,4 +1,8 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero/Hero";
+import Header from "../components/Layout/Header";
+
 
 export default function Contact() {
   const contactContainerStyle = {
@@ -16,6 +20,8 @@ export default function Contact() {
   };
 
   return (
+    <>
+        <Header/>
     <div className="container mt-5" style={contactContainerStyle}>
       <div className="row">
         <div className="col-md-6">
@@ -53,5 +59,6 @@ export default function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
