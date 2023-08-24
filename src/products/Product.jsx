@@ -1,42 +1,30 @@
-import React, { useState, useEffect } from "react";
-import ProductCard from "./ProductCard";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
-export default function Products() {
-  const [last10Products, setLast10Products] = useState([]);
-  const [showAlert, setShowAlert] = useState(false); // Duruma bağlı uyarı gösterimi
+export default function Product({ user }) {
+  const { productId } = useParams();
+  const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products?limit=10")
+    fetch(`https://fakestoreapi.com/products/${productId}`)
       .then((res) => res.json())
-      .then((res) => setLast10Products(res));
-  }, []);
+      .then((json) => setProduct(json))
+      .catch((err) => console.error(err));
+  }, [productId]);
 
-  const addToFavs = () => {
-    // Favorilere ekleme işlemleri burada gerçekleştirilebilir
-    setShowAlert(true); // Uyarıyı göster
-    setTimeout(() => {
-      setShowAlert(false); // Uyarıyı gizle
-    }, 2000); // 2 saniye sonra uyarıyı gizle
-  };
+  if (!product) {
+    return <></>;
+  }
 
   return (
-    <>
-      <h2>Ürünler:</h2>
-      <div className="row row-cols-sm-3 row-cols-md-4">
-        {last10Products.map((item) => (
-          <div key={item.id} className="col mb-4">
-            <ProductCard item={item} />
-            <button className="btn btn-primary mt-2" onClick={addToFavs}>
-              Favorilere Ekle
-            </button>
-          </div>
-        ))}
+    <div className="product-details">
+      <div className="product-image">
+        <img src={product.image} alt="" className="w-100 img-thumbnail" />
       </div>
-      {showAlert && (
-        <div className="alert alert-success mt-3" role="alert">
-          Ürün favorilere eklendi!
-        </div>
-      )}
-    </>
+      <div className="product-info">
+        <h1>{product.title}</h1>
+        <p>{product.description}</p>
+      </div>
+    </div>
   );
 }
