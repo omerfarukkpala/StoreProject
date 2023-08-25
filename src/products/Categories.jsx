@@ -19,9 +19,13 @@ export default function Categories() {
     <br/>
     <br/>
     
+    
+    
     <div className="categories-container">
       <br/>
-      <h2 className="mb-4">Kategoriler</h2>
+      
+      
+      <h2>Kategoriler:</h2>      
       <div className="list-group">
         {categories.map((category, index) => (
           <Link
