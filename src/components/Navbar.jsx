@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { SiteContext } from "../context/SiteContext";
 import ThemeIcon from "./ThemeIcon";
-import CartIcon from "./Cart/CartIcon";
 
 export default function Navbar() {
   const { user, handleLogout } = useContext(SiteContext);
@@ -70,16 +69,12 @@ export default function Navbar() {
             
             {user ? (
               <>
-              
-
-              
-
-                <NavLink 
+                <NavLink
                   className="nav-link"
                   to="/sepet"
                   style={menuItemStyle}
                 >
-                        Sepetim
+                  Sepet
                 </NavLink>
                 <button className="btn" onClick={handleLogout} style={menuItemStyle}>
                   Logout ({user.name})
