@@ -9,6 +9,8 @@ export default function ProductLayout() {
           {/* Outlet: Detay Sayfalarinin Burda Gosterilmesini Saglar.. */}
           <Categories />
         </div>
+        <br />
+        <br />
         <div className="col-sm-8">
           <Outlet />
         </div>

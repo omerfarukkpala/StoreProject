@@ -33,6 +33,7 @@ export default function Category({user}) {
       <br />
       <br />
       <br />
+      <br />
     </>
   )
 }

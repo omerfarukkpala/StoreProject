@@ -22,7 +22,9 @@ export default function Product({ user }) {
   return (
     <>
     <Header/>
-    
+    <br/>
+    <br/>
+    <br/>
     <div className="product-details">
       <div className="product-image">
         <img src={product.image} alt="" className="w-100 img-thumbnail" />
