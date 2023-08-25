@@ -4,6 +4,9 @@ import Header from "../components/Layout/Header";
 
 export default function Sepet({ user }) {
   const [sepets, setSepets] = useState([]);
+  const aboutContainerStyle = {
+    marginLeft: "-0.50cm",
+  };
 
   useEffect(() => {
     setSepets(JSON.parse(localStorage.getItem("sepets")) ?? []);
@@ -19,9 +22,12 @@ export default function Sepet({ user }) {
   return (
     <>
     <Header/>
+    <br/>
+    <br/>
+    <br/>
       <h1>Sepet</h1>
 
-      <p>Toplam {sepets.length} ürün sepete eklenmiştir.</p>
+      
 
       <div className="list-group">
         {sepets.map((item) => (
@@ -29,10 +35,13 @@ export default function Sepet({ user }) {
             <Link to={`/products/product/${item.id}`} className="text-decoration-none">
               {item.title.toUpperCase()}
             </Link>
+            
             <button className="btn btn-danger" onClick={() => removeFromSepets(item.id)}>
               Sepetten  Çıkar
             </button>
+            
           </div>
+          
         ))}
       </div>
     </>

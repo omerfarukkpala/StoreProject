@@ -10,17 +10,26 @@ export default function About() {
     <>
       <Header />
       <br />
-      <br />
-      <br />
-      <br />
-      
-
+      <div className="container mt-5" style={aboutContainerStyle}>
+        <div className="row">
+          <div className="col-md-12">
+            <h2 className="mb-4">Neden Biz?</h2>
+            <p className="lead">
+              Trend Mağaza olarak en son moda ürünleri sunmaktan gurur duyuyoruz. Müşteri memnuniyeti
+              ve kalite standartlarımızla fark yaratıyoruz. Siz de hızla değişen trendlere ayak
+              uydurmak istiyorsanız, en güncel ve şık ürünlerimizi incelemek için bizimle iletişime
+              geçebilirsiniz. Moda tutkunlarının tercihi Trend Mağaza, tarzınızı özgünleştirmek için
+              burada!
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="container mt-5" style={aboutContainerStyle}>
         <div className="row">
           <div className="col-md-6">
             <h3 className="mb-4">Hakkımızda</h3>
             <p className="lead">
-              Biz, PALA-Store olarak 10 yıldır müşterilerimize en kaliteli ürünleri sunmaktan gurur duyuyoruz.
+              Biz, Trend Mağaza olarak 10 yıldır müşterilerimize en kaliteli ürünleri sunmaktan gurur duyuyoruz.
               Mağazamızda geniş bir ürün yelpazesi bulabilirsiniz, her türlü ihtiyacınıza uygun ürünlerimiz mevcuttur.
             </p>
           </div>
