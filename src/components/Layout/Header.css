@@ -1,14 +1,18 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10%;
-    border-bottom: 1px solid #eee;
-    z-index: 99;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15%; /* Soldan ve sağdan 5% padding bırakıyoruz */
+  border-bottom: 1px solid #eee;
+  z-index: 99;
+}
+
+/* Eğer h1 elementinin yazısını daha da sola çekmek isterseniz, h1 öğesinin margin'ini ayarlayabilirsiniz */
+.header h1 {
+  margin-left: 10px; /* İstediğiniz miktarı ayarlayabilirsiniz */
+}

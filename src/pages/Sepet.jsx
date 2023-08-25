@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../components/Layout/Header";
 
 export default function Sepet({ user }) {
   const [sepets, setSepets] = useState([]);
@@ -17,6 +18,7 @@ export default function Sepet({ user }) {
 
   return (
     <>
+    <Header/>
       <h1>Sepet</h1>
 
       <p>Toplam {sepets.length} ürün sepete eklenmiştir.</p>
