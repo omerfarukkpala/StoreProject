@@ -22,10 +22,15 @@ export default function Category({user}) {
     <br/>
     
     
+
+    
       <h2>Kategory: {categoryName.toUpperCase()}</h2>
       <div className="row row-cols-sm-3 row-cols-md-4">
         {categoryProducts.map(item => <ProductCard key={item.id} item={item} />)}
       </div>
+      <br />
+      <br />
+      <br />
     </>
   )
 }
