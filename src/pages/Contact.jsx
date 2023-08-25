@@ -6,13 +6,17 @@ import Header from "../components/Layout/Header";
 
 export default function Contact() {
   const contactContainerStyle = {
-    color: "#333333", // Koyu Gri
-    padding: "30px",
-    borderRadius: "8px",
-    marginTop: "20px",
-    backgroundColor: "#FFFFFF", // Beyaz Arka Plan
+    padding: "100px 0 800px 0", // Üst, Sağ, Alt, Sol
+    margin: "100px",
   };
-
+  
+  const contactTitleStyle = {
+    marginLeft: "10cm", // Yaklaşık 30 cm sola kaydırma
+  };
+  
+  
+  
+  
   const formButtonStyle = {
     backgroundColor: "#FFD700", // Altın Sarısı
     borderColor: "#FFD700", // Altın Sarısı
@@ -22,10 +26,10 @@ export default function Contact() {
   return (
     <>
         <Header/>
-    <div className="container mt-5" style={contactContainerStyle}>
+        <div className="container mt-3" style={{ ...contactContainerStyle, marginLeft: "0cm" }}>
       <div className="row">
         <div className="col-md-6">
-          <h1 className="mb-4">İletişim</h1>
+          <h2 className="mb-4">İletişim</h2>
           <p className="lead">Bizimle iletişime geçmek için aşağıdaki bilgileri kullanabilirsiniz:</p>
           <ul className="list-unstyled">
             <li>

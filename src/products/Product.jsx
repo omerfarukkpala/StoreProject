@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../components/Layout/Header";
+import Navbar from "../components/Navbar";
 
 export default function Product({ user }) {
   const { productId } = useParams();
@@ -14,12 +15,14 @@ export default function Product({ user }) {
   }, [productId]);
 
   if (!product) {
-    return <></>;
+    return <>
+   </>;
   }
 
   return (
     <>
     <Header/>
+    
     <div className="product-details">
       <div className="product-image">
         <img src={product.image} alt="" className="w-100 img-thumbnail" />
