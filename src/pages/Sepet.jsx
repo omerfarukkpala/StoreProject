@@ -25,6 +25,7 @@ export default function Sepet({ user }) {
     <br/>
     <br/>
     <br/>
+    <br/>
       <h1>Sepet</h1>
 
       
