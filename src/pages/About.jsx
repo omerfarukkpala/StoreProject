@@ -10,6 +10,7 @@ export default function About() {
     <>
       <Header />
       <br />
+      <br />
       <div className="container mt-5" style={aboutContainerStyle}>
         <div className="row">
           <div className="col-md-12">

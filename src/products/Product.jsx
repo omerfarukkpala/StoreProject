@@ -23,6 +23,7 @@ export default function Product({ user }) {
     <>
     <Header/>
     <br/>
+    
     <br/>
     <br/>
     <div className="product-details">

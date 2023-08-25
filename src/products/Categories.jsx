@@ -18,7 +18,7 @@ export default function Categories() {
     <Header/>
     <br/>
     <br/>
-    
+    <br/>
     
     
     <div className="categories-container">

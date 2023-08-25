@@ -12,7 +12,18 @@
   z-index: 99;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: -0.40cm; /* 5 cm sola kaydırma */
+}
+
+.logo {
+  width: 200px; /* İstediğiniz genişliği ayarlayabilirsiniz */
+  height: auto;
+}
+
 /* Eğer h1 elementinin yazısını daha da sola çekmek isterseniz, h1 öğesinin margin'ini ayarlayabilirsiniz */
 .header h1 {
-  margin-left: 10px; /* İstediğiniz miktarı ayarlayabilirsiniz */
+  display: none; /* H1 etiketini gizliyoruz */
 }
