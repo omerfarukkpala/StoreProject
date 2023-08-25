@@ -11,15 +11,11 @@ import Cart from './components/Cart/Cart'
 
 
 function App() {
+  
   const {user, handleLogin, handleLogout} = useContext(SiteContext)
   
   return (
     <>
-      
-      
-     
-      
-    
       <div className="container">
         <div className="row">
           <div className="col-sm-12">

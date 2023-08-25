@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import ProductCard from "./ProductCard"
+import Header from "../components/Layout/Header"
 
 export default function Category({user}) {
   // const params = useParams()
@@ -16,6 +17,8 @@ export default function Category({user}) {
 
   return (
     <>
+    
+    <br/>
       <h1>Kategory: {categoryName.toUpperCase()}</h1>
       <div className="row row-cols-sm-3 row-cols-md-4">
         {categoryProducts.map(item => <ProductCard key={item.id} item={item} />)}

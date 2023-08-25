@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "../components/Layout/Header";
 
 
 export default function Categories() {
@@ -12,6 +13,10 @@ export default function Categories() {
   }, []);
 
   return (
+    <>
+    <br/>
+    <br/>
+    <Header/>
     <div className="categories-container">
       <h1 className="mb-4">Kategoriler</h1>
       <div className="list-group">
@@ -27,5 +32,6 @@ export default function Categories() {
         ))}
       </div>
     </div>
+    </>
   );
 }
