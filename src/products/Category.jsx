@@ -17,9 +17,14 @@ export default function Category({user}) {
 
   return (
     <>
-    
     <br/>
-      <h1>Kategory: {categoryName.toUpperCase()}</h1>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+      <h2>Kategory: {categoryName.toUpperCase()}</h2>
       <div className="row row-cols-sm-3 row-cols-md-4">
         {categoryProducts.map(item => <ProductCard key={item.id} item={item} />)}
       </div>

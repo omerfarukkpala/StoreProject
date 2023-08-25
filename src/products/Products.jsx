@@ -18,7 +18,10 @@ export default function Products() {
     <>
     <Header/>
     <br/>
-    <h2>Urunler:</h2>
+    <br/>
+    <br/>
+    
+    <h1>Urunler:</h1>
       <div className="row row-cols-sm-3 row-cols-md-4">
         {last10Products.map(item => <ProductCard key={item.id} item={item} />)}
       </div>

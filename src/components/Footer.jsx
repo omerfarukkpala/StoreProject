@@ -6,8 +6,9 @@ export default function Footer() {
     window.location.pathname === "/about" ||
     window.location.pathname === "/contact" ||
     window.location.pathname === "/login" ||
-    window.location.pathname === "/sepet" ||
-    window.location.pathname === "/category";
+    window.location.pathname === "/category" ||
+    window.location.pathname === "/categories" ||
+    window.location.pathname === "/sepet";
 
   const footerStyle = {
     backgroundColor: "#141E61", // Koyu Mavi
