@@ -1,11 +1,11 @@
-import "./Hero.css"
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <section className="hero-container">
       <div className="hero-slogan">
-        <span>Bu sezonda en iyisini bul🔥</span>
-        <h2>Herkese özel koleksiyon</h2>
+        <span>Sadece En İyisi İçin! 🌟</span>
+        <h2>Tarzını Kendine Özel Kıl! 💫</h2>
         <a href="/">Şimdi Keşfet</a>
       </div>
       <div className="hero-image-container">
