@@ -12,7 +12,8 @@ const Header = () => {
       </div>
 
       <Navbar />
-      <HeaderCartButton />
+      {/* <HeaderCartButton />  */}
+      {/* sepetim burada normalde */}
       <ThemeIcon />
     </header>
   );
