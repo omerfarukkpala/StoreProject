@@ -11,8 +11,8 @@ export default function Footer() {
     window.location.pathname === "/sepet";
 
   const footerStyle = {
-    backgroundColor: "#141E61", // Koyu Mavi
-    color: "#FFFFFF", // Beyaz
+    backgroundColor: "#d9ffd4", // Koyu Mavi
+    color: "#000000", // Beyaz
   };
 
   const linkStyle = {
