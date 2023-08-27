@@ -3,7 +3,6 @@ import React from "react";
 export default function Footer() {
   // Footer'ın sabitlenip sabitlenmeyeceğini kontrol eden bir değişken
   const isFixed =
-    window.location.pathname === "/about" ||
     window.location.pathname === "/contact" ||
     window.location.pathname === "/login" ||
     window.location.pathname === "/category" ||
