@@ -26,10 +26,7 @@ export default function Sepet({ user }) {
     <br/>
     <br/>
     <br/>
-      <h1>Sepet</h1>
-
-      
-
+    <h1>Sepet</h1>
       <div className="list-group">
         {sepets.map((item) => (
           <div key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
