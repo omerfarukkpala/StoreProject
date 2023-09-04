@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
         
-        <Header/>
-        <Navbar/>
+      <Header/>
+      <Navbar/>
       <Hero/>
       <Cart/>
       <Products/>

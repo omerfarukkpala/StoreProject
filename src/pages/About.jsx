@@ -11,11 +11,12 @@ export default function About() {
       <Header />
       <br />
       <br />
-      <br />
+    
       <div className="container mt-5" style={aboutContainerStyle}>
         <div className="row">
           <div className="col-md-12">
           <br />
+          
             <h2 className="mb-4">Neden Biz?</h2>
             <p className="lead">
               Trend Mağaza olarak en son moda ürünleri sunmaktan gurur duyuyoruz. Müşteri memnuniyeti
