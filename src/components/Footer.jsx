@@ -15,7 +15,7 @@ export default function Footer() {
   };
 
   const linkStyle = {
-    color: "#FFD700", // Altın Sarısı
+    color: "#050502", // Altın Sarısı
     textDecoration: "none",
   };
 

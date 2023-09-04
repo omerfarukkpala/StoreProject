@@ -7,12 +7,12 @@ export default function Navbar() {
   const { user, handleLogout } = useContext(SiteContext);
 
   const brandStyle = {
-    color: "#FFD700", // Altın Sarısı
+    color: "#050502", //  
     fontWeight: "bold",
   };
 
   const menuItemStyle = {
-    color: "#FFD700", // Beyaz
+    color: "#050502", // Beyaz
     textDecoration: "none",
     padding: "0.5rem 1rem",
     transition: "background-color 0.3s",
