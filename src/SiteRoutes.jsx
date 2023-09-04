@@ -5,7 +5,7 @@ import Contact from './pages/Contact'
 import PageNotFound from './pages/PageNotFound'
 import { Category, Product, ProductLayout, Products } from './products'
 import Login from './pages/Login'
-import Fav from './pages/Sepet'
+import Sepet from './pages/Sepet'
 import PrivateRoute from './PrivateRoute'
 
 
@@ -22,7 +22,7 @@ export default function SiteRoutes() {
         <Route path='product/:productId' element={<Product />} />
       </Route>
       <Route path='/login' element={<Login />} />
-      <Route path='/sepet' element={<PrivateRoute><Fav /></PrivateRoute>} />
+      <Route path='/sepet' element={<PrivateRoute><Sepet /></PrivateRoute>} />
 
       <Route path='*' element={<PageNotFound />} />
     </Routes>
