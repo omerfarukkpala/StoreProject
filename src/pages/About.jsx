@@ -11,9 +11,11 @@ export default function About() {
       <Header />
       <br />
       <br />
+      <br />
       <div className="container mt-5" style={aboutContainerStyle}>
         <div className="row">
           <div className="col-md-12">
+          <br />
             <h2 className="mb-4">Neden Biz?</h2>
             <p className="lead">
               Trend Mağaza olarak en son moda ürünleri sunmaktan gurur duyuyoruz. Müşteri memnuniyeti
@@ -28,6 +30,7 @@ export default function About() {
       <div className="container mt-5" style={aboutContainerStyle}>
         <div className="row">
           <div className="col-md-6">
+            <br />
             <h3 className="mb-4">Hakkımızda</h3>
             <p className="lead">
               Biz, Trend Mağaza olarak 10 yıldır müşterilerimize en kaliteli ürünleri sunmaktan gurur duyuyoruz.
@@ -35,6 +38,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-md-6">
+          <br />
             <h3 className="mb-4">Ekibimiz</h3>
             <p>
               Uzman ekibimiz, en son trendleri takip ederek sizlere en iyi ürünleri sunmaktadır.
@@ -53,6 +57,7 @@ export default function About() {
             <p>
               <strong>E-posta:</strong> info@example.com
             </p>
+            <br />
           </div>
         </div>
       </div>

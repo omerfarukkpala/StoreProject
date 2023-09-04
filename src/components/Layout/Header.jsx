@@ -4,6 +4,7 @@ import ThemeIcon from "../ThemeIcon";
 import "./Header.css";
 import HeaderCartButton from "./HeaderCartButton";
 
+
 const Header = () => {
   return (
     <header className="header">
