@@ -9,3 +9,4 @@ https://store-project-zeta.vercel.app/
 ![urunler](https://github.com/omerfarukkpala/StoreProject/assets/101570820/7be50549-9c66-4b87-9820-27f10719f9dc)
 ![login işlemi](https://github.com/omerfarukkpala/StoreProject/assets/101570820/2d4ea7de-570a-4cf0-93f0-e62cf357ba47)
 ![Sepet içerisi](https://github.com/omerfarukkpala/StoreProject/assets/101570820/ddb41705-bfc4-40a1-9345-e9ea227dedce)
+![girisyaptiktansonraurunler](https://github.com/omerfarukkpala/StoreProject/assets/101570820/b9f68315-4f56-49d2-b5e5-e336b2481b69)
